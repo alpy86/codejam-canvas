@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <title>Codejam Canvas</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__nav">
+            <nav><i class="fas fa-bars"></i></nav>
+            <h1>CodeJam-Palette</h1>
+        </div>
+        <i class="fas fa-ellipsis-v"></i>
+    </header>
+    <main>
+        <div class="tools">
+            <ul class="tools__list">
+                <li class="tools__list--item"><i class="tools fas fa-fill-drip"></i><span class="item--text">Paint
+                        bucket</span></li>
+                <li class="tools__list--item choose"><i class="tools fas fa-eye-dropper"></i></i><span
+                        class="item--text">Choose color</span></li>
+                <li class="tools__list--item"><i class="tools fas fa-arrows-alt"></i></i><span
+                        class="item--text">Move</span></li>
+                <li class="tools__list--item"><i class="tools fas fa-exchange-alt"></i><span
+                        class="item--text">Transform</span></li>
+            </ul>
+            <ul class="tools__list">
+                <li class="tools__list--item"><span class="item--color current">Current color</span></li>
+                <li class="tools__list--item prev"><span class="item--color">Prev color</span></li>
+                <li class="tools__list--item"><span class="item--color red">red</span></li>
+                <li class="tools__list--item"><span class="item--color blue">blue</span></li>
+            </ul>
+        </div>
+        <div class="field">
+            <canvas class="canvas" width="512" height="512"></canvas>
+            <div class="field__button">
+                <button class="btn-canvas img4">4 x 4</button>
+                <button class="btn-canvas img32">32 x 32</button>
+                <button class="btn-canvas img256">256 x 256</button>
+            </div>
+            <div class="load-img">
+                <img class="img-rss" src="data/image.png" alt="rss">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
